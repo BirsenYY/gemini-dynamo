@@ -24,8 +24,8 @@ def analyze_video(request: VideoAnalysisRequest):
 
     genai_processor = GeminiProcessor(
         model_name = "gemini-pro",
-        project = "gemini-dynamo-1983",
-        location = "europe-west2"
+        project = "write your project ID here",
+        location = "write GCP location here"
     )
     processor = YoutubeProcessor(genai_processor)
 
